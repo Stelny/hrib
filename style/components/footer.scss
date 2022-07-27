@@ -1,0 +1,18 @@
+.footer {
+    background: #F4F4F4;
+    &-content {
+        padding: 4rem 0;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        border-top: 1px solid #0000001A;
+        align-items: center;
+        font-size: 1rem;
+        color: #7C8495;
+    }
+}

@@ -1,0 +1,26 @@
+.btn-phone {
+    padding: 0.5rem 2.5rem;
+    background: #047ACF;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 1200px) and (min-width: 991px) {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.875rem;
+    }
+    &::before {
+        content: url(./../icons/phone.svg);
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+}
