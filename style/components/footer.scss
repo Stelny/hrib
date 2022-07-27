@@ -5,6 +5,9 @@
         display: grid;
         grid-gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
+        @media screen and (max-width: 776px) {
+            grid-template-columns: 1fr;
+        }
     }
     &-bottom {
         display: flex;
@@ -14,5 +17,36 @@
         align-items: center;
         font-size: 1rem;
         color: #7C8495;
+    }
+
+    &-item {
+        p {
+            font-size: 1.25rem;
+            color: black;
+        }
+        &.consultation {
+            p {
+                font-size: 1.5rem;
+                color: #A09B9B;
+                font-weight: 600;
+            }
+            a {
+                color: #047ACF;
+                font-size: 1.25rem;
+                font-weight: 700;
+            }
+        }
+        .copy {
+            display: flex;
+            align-items: center;
+            text-decoration: underline;
+            color: black;
+            &::after {
+                content: url(./../icons/copy.svg);
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 }
