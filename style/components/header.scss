@@ -8,6 +8,9 @@
         &-logo {   
             display: flex;
             align-items: center;
+            &:hover {
+                text-decoration: none;
+            }
             &-image {
                 margin-right: 0.75rem;
                 width: 100%;
@@ -15,6 +18,7 @@
             }
             &-text {
                 white-space: nowrap;
+            
                 h1 {
                     font-size: 0.875rem;
                     color: black;

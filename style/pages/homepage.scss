@@ -1,3 +1,86 @@
+.blog {
+    &-thanks {
+        max-width: 208px;
+        color: #047ACF;
+        font-weight: 700;
+        padding-bottom: 4rem;
+    }
+    &-nav {
+        padding: 1.5rem 0;
+        background: #F9F9F9;
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            a {
+                display: flex;
+                align-items: center;
+                color: #A09B9B;
+                svg {
+                    margin-right: 1rem;
+                }
+                &:last-child {
+                    color: #047ACF;
+                    svg {
+                        margin-right: 0;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    &-content {
+        padding: 3rem 0;
+        h2 {
+            font-size: 1.75rem;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            @media screen and (max-width: 776px) {
+                font-size: 1.25rem;
+            }
+        }
+        p {
+            font-size: 1.125rem;
+        }
+    }
+    &-list {
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        &-item {
+            border-bottom: 1px solid #D6D6D6;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 0;
+            padding-right: 1.5rem;
+            position: relative;
+            &:hover {
+                text-decoration: none;
+            }
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                color: black;
+                
+            }
+            p {
+                margin: 0;
+                color: #555555;
+                font-size: 18px;
+            }
+            &::after {
+                content: url(./../icons/arrow.svg);
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:first-child {
+                border-top: 1px solid #D6D6D6;
+            }
+        }
+    }
+}
 .homepage {
     padding: 3rem 0;
     &-banner {
@@ -41,6 +124,9 @@
             color: black;
             font-weight: bold;
             margin-bottom: 2rem;
+            @media screen and (max-width: 776px) {
+                font-size: 1.25rem;
+            }
         }
         p {
             font-size: 1.125rem;
